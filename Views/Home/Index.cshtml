@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+    Layout = "_Layout";
+}
+
+<div class="index-container text-center">
+    <h1 class="mb-4">Welcome to Recipe Book</h1>
+
+    <a asp-controller="Home"
+       asp-action="Recipes"
+       class="btn btn-outline-primary recipe-link">
+        <i class="bi bi-journal-bookmark-fill me-2" aria-hidden="true"></i>
+        View Recipes
+    </a>
+</div>
+
+

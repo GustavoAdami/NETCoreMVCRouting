@@ -1,0 +1,19 @@
+﻿@model Routing.Models.Recipe
+
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "_Layout";
+}
+
+<div class="details-container">
+    <h2>@Model.Title</h2>
+
+    <p><strong>Instructions:</strong></p>
+    <p>@Model.Instructions</p>
+
+    <p>
+        <a asp-controller="Home" asp-action="Recipes" class="back-link">
+            ← Back to Recipes
+        </a>
+    </p>
+</div>

@@ -1,0 +1,30 @@
+﻿@model List<Routing.Models.Recipe>
+
+@{
+    ViewBag.Title = "Recipes";
+    Layout = "_Layout";
+}
+    
+<h2 class="recipes-title">All Recipes</h2>
+
+<div class="recipes-container">
+    <ul class="list-unstyled row g-3 justify-content-center">
+        @foreach (var recipe in Model)
+        {
+            <li class="col-sm-6 col-md-4 col-lg-3">
+                <a asp-controller="Home"
+                   asp-action="Details"
+                   asp-route-id="@recipe.Id"
+                   class="recipe-card text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">@recipe.Title</h5>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+
+
