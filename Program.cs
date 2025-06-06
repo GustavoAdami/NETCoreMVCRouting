@@ -43,7 +43,7 @@ namespace Routing
             //app.MapDefaultControllerRoute();
 
             // AND/OR - Can use both conventional and attribute routing in the same application.
-            // Enable Attribute routing
+            // Enable Attribute routing - if you want only attribute routing, comment out the MapControllerRoute
             //app.MapControllers();
             /*
              * Must use attribute routing in controllers and actions.
@@ -55,7 +55,7 @@ namespace Routing
             // Redirect root URL to a specific action
             //app.MapGet("/", context =>
             //{
-            //    context.Response.Redirect("/Home");
+            //    context.Response.Redirect("/index");
             //    return Task.CompletedTask;
             //});
 

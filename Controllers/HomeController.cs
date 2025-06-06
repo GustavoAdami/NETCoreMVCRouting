@@ -4,6 +4,10 @@ using Routing.Models;
 
 namespace Routing.Controllers
 {
+    /*
+     * Using conventional routing, the pattern is defined in Program.cs.
+     * It defaults to {controller}/{action}/{id?} -> "/Home/Index/{id?}"
+     */
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
